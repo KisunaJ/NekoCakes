@@ -6,6 +6,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import 'hammerjs';
 import { AppComponent } from './app.component';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { AppComponent } from './app.component';
     MatToolbarModule,
     FlexLayoutModule,
     BrowserModule,    
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
