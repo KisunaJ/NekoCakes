@@ -7,10 +7,13 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import 'hammerjs';
 import { AppComponent } from './app.component';
 import {MatButtonModule} from '@angular/material/button';
+import{IvyCarouselModule} from 'angular-responsive-carousel';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -18,6 +21,7 @@ import {MatButtonModule} from '@angular/material/button';
     FlexLayoutModule,
     BrowserModule,    
     MatButtonModule,
+    IvyCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
