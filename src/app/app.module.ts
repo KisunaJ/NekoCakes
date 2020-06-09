@@ -9,11 +9,14 @@ import { AppComponent } from './app.component';
 import {MatButtonModule} from '@angular/material/button';
 import{IvyCarouselModule} from 'angular-responsive-carousel';
 import { CarouselComponent } from './carousel/carousel.component';
+import { homeComponent } from './home/home.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    CarouselComponent
+    CarouselComponent,
+    homeComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -22,6 +25,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     BrowserModule,    
     MatButtonModule,
     IvyCarouselModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
