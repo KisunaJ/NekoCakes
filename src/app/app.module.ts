@@ -11,6 +11,8 @@ import{IvyCarouselModule} from 'angular-responsive-carousel';
 import { CarouselComponent } from './carousel/carousel.component';
 import { homeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
+import  { AppRoutingModule } from './app-routing/app-routing.module';
+
 
 
 @NgModule({
@@ -27,6 +29,7 @@ import { HeaderComponent } from './header/header.component';
     BrowserModule,    
     MatButtonModule,
     IvyCarouselModule,
+    AppRoutingModule
     
   ],
   providers: [],
