@@ -7,11 +7,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import 'hammerjs';
 import { AppComponent } from './app.component';
 import {MatButtonModule} from '@angular/material/button';
-import{IvyCarouselModule} from 'angular-responsive-carousel';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { CarouselComponent } from './carousel/carousel.component';
-import { homeComponent } from './home/home.component';
+import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import  { AppRoutingModule } from './app-routing/app-routing.module';
+import { ProductosComponent } from './productos/productos.component';
 
 
 
@@ -19,8 +20,9 @@ import  { AppRoutingModule } from './app-routing/app-routing.module';
   declarations: [
     AppComponent,
     CarouselComponent,
-    homeComponent,
-    HeaderComponent
+    HomeComponent,
+    HeaderComponent,
+    ProductosComponent
   ],
   imports: [
     BrowserAnimationsModule,
