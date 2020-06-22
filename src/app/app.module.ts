@@ -11,8 +11,9 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { CarouselComponent } from './carousel/carousel.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
-import  { AppRoutingModule } from './app-routing/app-routing.module';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 import { ProductosComponent } from './productos/productos.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -22,7 +23,8 @@ import { ProductosComponent } from './productos/productos.component';
     CarouselComponent,
     HomeComponent,
     HeaderComponent,
-    ProductosComponent
+    ProductosComponent,
+    FooterComponent
   ],
   imports: [
     BrowserAnimationsModule,
