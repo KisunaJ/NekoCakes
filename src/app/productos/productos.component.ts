@@ -45,7 +45,7 @@ export class ProductosComponent implements OnInit { //esta linea no se modifica
     variable.esSinAzucar = false;
     variable.esSinTacc = true;
     variable.esVegana = true;
-    variable.imagen = "Ruta de imagen chocotorta";
+    variable.imagen = "https://material.angular.io/assets/img/examples/shiba2.jpg";
     this.productos.push(variable);
 
     var variable2 = new Producto;
@@ -56,7 +56,7 @@ export class ProductosComponent implements OnInit { //esta linea no se modifica
     variable2.esSinAzucar = true;
     variable2.esSinTacc = true;
     variable2.esVegana = false;
-    variable2.imagen = "Ruta de imagen cupcake marmolado";
+    variable2.imagen = "https://material.angular.io/assets/img/examples/shiba2.jpg";
     this.productos.push(variable2);
 
     var variable3 = new Producto;
@@ -67,7 +67,7 @@ export class ProductosComponent implements OnInit { //esta linea no se modifica
     variable3.esSinAzucar = false;
     variable3.esSinTacc = false;
     variable3.esVegana = false;
-    variable3.imagen = "Ruta de imagen cookiechips";
+    variable3.imagen = "https://material.angular.io/assets/img/examples/shiba2.jpg";
     this.productos.push(variable3);
    
 
