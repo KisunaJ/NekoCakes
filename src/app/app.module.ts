@@ -14,6 +14,7 @@ import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { ProductosComponent } from './productos/productos.component';
 import { FooterComponent } from './footer/footer.component';
+import {MatCardModule} from '@angular/material/card'
 
 
 
@@ -33,7 +34,8 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,    
     MatButtonModule,
     IvyCarouselModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatCardModule,
     
   ],
   providers: [],

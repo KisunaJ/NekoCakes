@@ -1,3 +1,14 @@
 <!-- asi se llama una variable del ts -->
 <span> {{titulo}} </span>
 
+<!-- esta expresion if (verifica que productos no este vacio, si lo esta no se muestra el div y evita los errores asociados) -->
+<div *ngIf="productos">
+    <!-- la expresion que use abajo es un for each (por cada producto de el array productos me lo va a aguardar en la variable "prod") -->
+    <div *ngFor="let prod of productos">
+        <br>
+        <div><span>{{prod.nombre}}</span></div>
+        <div><span>{{prod.descripcion}}</span></div>
+        
+    </div>
+</div>
+
