@@ -15,6 +15,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { ProductosComponent } from './productos/productos.component';
 import { FooterComponent } from './footer/footer.component';
 import {MatCardModule} from '@angular/material/card'
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 
@@ -36,6 +37,7 @@ import {MatCardModule} from '@angular/material/card'
     IvyCarouselModule,
     AppRoutingModule,
     MatCardModule,
+    MatGridListModule,
     
   ],
   providers: [],
