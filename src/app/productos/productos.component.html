@@ -1,12 +1,15 @@
-<!-- asi se llama una variable del ts -->
-<h2 class="titulos"> {{ titulo }} </h2>
-
+<mat-grid-list cols="1" rowHeight="100px">
+  <mat-grid-tile>
+    <!-- asi se llama una variable del ts -->
+    <h2 class="titulos titulos:before"> {{ titulo }} </h2>
+  </mat-grid-tile>
+</mat-grid-list>
 <!-- esta expresion if (verifica que productos no este vacio, si lo esta no se muestra el div y evita los errores asociados) -->
-<div *ngIf="productos">
+<div *ngIf="productosFiltrados">
   <!-- la expresion que use abajo es un for each (por cada producto de el array productos me lo va a aguardar en la variable "prod") -->
 
   <mat-grid-list cols="2" rowHeight="1:1">
-    <div *ngFor="let prod of productos">
+    <div *ngFor="let prod of productosFiltrados">
       <mat-grid-tile>
         <mat-card class="example-card">
           <mat-card-header>
