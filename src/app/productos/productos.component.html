@@ -1,31 +1,27 @@
 <!-- asi se llama una variable del ts -->
-<span> {{titulo}} </span>
+<h2 class="titulos"> {{ titulo }} </h2>
 
 <!-- esta expresion if (verifica que productos no este vacio, si lo esta no se muestra el div y evita los errores asociados) -->
 <div *ngIf="productos">
-    <!-- la expresion que use abajo es un for each (por cada producto de el array productos me lo va a aguardar en la variable "prod") -->
+  <!-- la expresion que use abajo es un for each (por cada producto de el array productos me lo va a aguardar en la variable "prod") -->
+
+  <mat-grid-list cols="2" rowHeight="1:1">
     <div *ngFor="let prod of productos">
-        <br>
-        <mat-grid-list cols="2" rowWidth="400px">
-            <mat-grid-tile>
-                <mat-card class="example-card">
-                    <mat-card-header>
-                        <div mat-card-avatar class="example-header-image"></div>
-                        <mat-card-title>{{prod.nombre}}</mat-card-title>
-                        <mat-card-subtitle>{{prod.categoria}}</mat-card-subtitle>
-                    </mat-card-header>
-                    <img mat-card-image src={{prod.imagen}}>
-                    <mat-card-content>
-                        <p>
-                            {{prod.descripcion}}
-                        </p>
-                    </mat-card-content>
-                    <mat-card-actions>
-                        <button mat-button>LIKE</button>
-                        <button mat-button>SHARE</button>
-                    </mat-card-actions>
-                </mat-card>
-            </mat-grid-tile>
-        </mat-grid-list>
+      <mat-grid-tile>
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{ prod.nombre }}</mat-card-title>
+            <mat-card-subtitle>{{ prod.categoria }}</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="{{ prod.imagen }}" />
+          <mat-card-content>
+            <p>
+              {{ prod.descripcion }}
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
     </div>
+  </mat-grid-list>
 </div>
