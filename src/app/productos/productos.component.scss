@@ -1,3 +1,4 @@
+
 .titulos {
   font-size: 50px;
   display: inline-block;
@@ -22,9 +23,11 @@
 
 .example-card {
   max-width: 400px;
+  background-color: pink;
+  color: black;
 }
 
 .example-header-image {
-  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-image: url("src/assets/Tortas/cake.jpg");
   background-size: cover;
 }
