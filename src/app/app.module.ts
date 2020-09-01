@@ -8,7 +8,6 @@ import 'hammerjs';
 import { AppComponent } from './app.component';
 import {MatButtonModule} from '@angular/material/button';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
-import { CarouselComponent } from './carousel/carousel.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
@@ -22,7 +21,6 @@ import {MatGridListModule} from '@angular/material/grid-list';
 @NgModule({
   declarations: [
     AppComponent,
-    CarouselComponent,
     HomeComponent,
     HeaderComponent,
     ProductosComponent,

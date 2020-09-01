@@ -1,8 +1,4 @@
-.container {
-  margin: 20px;
-  display:flex;
-  
-}
+
 $lt-gray: #ddd;
 $background-dark: #512DA8;
 $background-light: #9575CD;
@@ -15,7 +11,7 @@ $background-pale: #D1C4E9;
 
 .footer{
     background-color: $background-pale;
-    @include zero-margin(20px, 0px);
+    @include zero-margin(0px, 20px);
 }
 
 .btn-facebook {color:#fff!important; background-color:#3b5998!important;}

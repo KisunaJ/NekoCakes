@@ -11,13 +11,15 @@
   <mat-grid-list cols="2" rowHeight="1:1">
     <div *ngFor="let prod of productosFiltrados">
       <mat-grid-tile>
-        <mat-card class="example-card">
+        <mat-card class="example-card" >
           <mat-card-header>
             <div mat-card-avatar class="example-header-image"></div>
             <mat-card-title >{{ prod.nombre }} </mat-card-title>
             <mat-card-subtitle style="color: blueviolet;">{{ prod.categoria }}</mat-card-subtitle>
           </mat-card-header>
-          <img mat-card-image src="{{ prod.imagen }}" style="max-width: 400px; max-height: 400px;"/>
+          <div style ="padding-top : 5%" fxLayoutAlign="center center">
+          <img mat-card-image src="{{ prod.imagen }}" style="max-width: 400px; max-height: 400px;" />
+        </div>
           <mat-card-content>
             <p>
               {{ prod.descripcion }}
